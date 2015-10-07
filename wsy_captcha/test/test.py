@@ -7,9 +7,9 @@ PACKAGE_PARENT = '../..'
 SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
 sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
 
-from captcha.comp import print_
-from captcha.captcha import Captcha
-import captcha.image as image
+from wsy_captcha.comp import print_
+from wsy_captcha.captcha import Captcha
+import wsy_captcha.image as image
 
 
 class MyCaptcha(Captcha):

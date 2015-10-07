@@ -2,7 +2,7 @@
 __author__ = 'wushuyi'
 import os
 from setuptools import setup, find_packages
-import captcha
+import wsy_captcha
 
 
 def read(fname):
@@ -22,10 +22,10 @@ def get_data(path):
 
 setup(
     name="wsy_captcha",
-    version=captcha.__version__,
+    version=wsy_captcha.__version__,
     url='https://github.com/wushuyi/wsy_captcha',
-    author=captcha.__author__,
-    author_email=captcha.__author_email__,
+    author=wsy_captcha.__author__,
+    author_email=wsy_captcha.__author_email__,
     description='A library that generates image captcha.',
     long_description=read('README.rst'),
     license='BSD',

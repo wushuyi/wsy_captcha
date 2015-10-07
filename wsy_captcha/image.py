@@ -5,12 +5,13 @@ __author__ = 'wushuyi'
 
 import random
 
-from captcha.comp import Draw
-from captcha.comp import Image
-from captcha.comp import ImageFilter
-from captcha.comp import getrgb
-from captcha.comp import truetype
-from captcha.comp import xrange
+from wsy_captcha.comp import Draw
+from wsy_captcha.comp import Image
+from wsy_captcha.comp import ImageFilter
+from wsy_captcha.comp import getrgb
+from wsy_captcha.comp import truetype
+from wsy_captcha.comp import xrange
+from wsy_captcha.bezier import make_bezier
 
 
 def captcha(drawings, width=200, height=75):
@@ -44,8 +45,6 @@ def smooth():
 
 
 def curve(color='#5C87B2', width=4, number=6):
-    from captcha.bezier import make_bezier
-
     if not callable(color):
         c = getrgb(color)
 

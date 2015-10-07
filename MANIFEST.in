@@ -2,4 +2,4 @@ include LICENSE
 include README.rst
 include requirements.txt
 include requirements-dev.txt
-recursive-include captcha/fonts *.ttf
+recursive-include wsy_captcha/fonts *.ttf

@@ -3,8 +3,8 @@ __author__ = 'wushuyi'
 
 import os
 import random
-from captcha.comp import BytesIO
-import captcha.image as image
+from wsy_captcha.comp import BytesIO
+import wsy_captcha.image as image
 
 FONTS_DIR = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'fonts')
 DEFAULT_FONTS = [os.path.join(FONTS_DIR, 'CoasterShadow.ttf')]
