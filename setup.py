@@ -33,9 +33,6 @@ setup(
     install_requires=get_requirements(),
     tests_require=get_requirements('-dev'),
     include_package_data=True,
-    package_data={
-        'fonts': ['*.ttf'],
-    },
     classifiers=[
         'Environment :: Console',
         'Intended Audience :: Developers',
