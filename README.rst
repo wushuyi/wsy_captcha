@@ -2,6 +2,7 @@ wsy_captcha
 ===================
 
 A library that generates image captcha.
+
 .. image:: https://raw.githubusercontent.com/wushuyi/wsy_captcha/master/test.png
 
 Installation
