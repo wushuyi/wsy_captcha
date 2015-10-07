@@ -8,9 +8,9 @@ A library that generates image captcha.
 Installation
 ------------
 
-Install captcha with pip::
+Install wsy_captcha with pip::
 
-    $ pip install captcha
+    $ pip install wsy_captcha
     
 Usage
 -----
