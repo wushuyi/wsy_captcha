@@ -15,20 +15,26 @@ def get_requirements(suffix=''):
     return rv
 
 
+def get_data(path):
+    _ROOT = os.path.abspath(os.path.dirname(__file__))
+    return os.path.join(_ROOT, path)
+
+
 setup(
     name="wsy_captcha",
     version=captcha.__version__,
-    url='https://github.com/wushuyi',
+    url='https://github.com/wushuyi/wsy_captcha',
     author=captcha.__author__,
     author_email=captcha.__author_email__,
     description='A library that generates image captcha.',
-    long_description=read('README.md'),
+    long_description=read('README.rst'),
     license='BSD',
     packages=find_packages(),
     install_requires=get_requirements(),
     tests_require=get_requirements('-dev'),
+    include_package_data=True,
     package_data={
-        '': ['*.ttf'],
+        'fonts': ['*.ttf'],
     },
     classifiers=[
         'Environment :: Console',
