@@ -19,9 +19,9 @@ Usage
     from captcha.comp import print_
     from captcha.captcha import Captcha
     import captcha.image as image
-    
+
     captcha = Captcha()
     code = captcha.randomCode()
     print_(code)
-    captcha.write('test.png')
+    captcha.write(code, 'test.png')
     
